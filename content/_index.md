@@ -3,14 +3,6 @@ title = "We we're only supposed to play some bloody covers!"
 featured_image = 'images/Article-Header-2026-02-20-a.png'
 description = ""
 +++
-Charlotte Louisa
-
-Dan Healy
-
-[Will Gibson](https://willgibson.co.uk)
-
-Ebn Mars
-
 ## Listen
 
 [Spotify](https://open.spotify.com/artist/4KqyEsSErUyL7ziPVjQjMm)
@@ -26,3 +18,13 @@ Etc.
 [Instagram](https://www.instagram.com/article.a.band/)
 
 [Blue Sky Social](https://bsky.app/profile/article-band.bsky.social)
+
+## Who we are
+
+Charlotte Louisa - Vocals
+
+Dan Healy - Guitar & Vocal
+
+[Will Gibson](https://willgibson.co.uk) - Bass
+
+Ebn Mars - Drums
