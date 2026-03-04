@@ -1,7 +1,7 @@
 +++
 title = "Article - Band"
 featured_image = 'images/Article-Header-2026-02-20-a.png'
-description = "We we're only supposed to play some bloody covers!"
+description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
 +++
 ## Listen
 
