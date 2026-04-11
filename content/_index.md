@@ -7,11 +7,11 @@ An alternative rock band reinventing songs you thought you knew and bringing ori
 
 ## Listen
 
-[Spotify](https://open.spotify.com/artist/4KqyEsSErUyL7ziPVjQjMm)
+On all the usual streaming platforms...
 
-[YouTube Music](https://www.youtube.com/channel/UC-NeOWoxOU-WHlCxsVQaJ8A)
-
-Etc.
+- [Spotify](https://open.spotify.com/artist/4KqyEsSErUyL7ziPVjQjMm)
+- [YouTube Music](https://www.youtube.com/channel/UC1-75aMHVMtFU-Es7UAFD6g)
+- Etc.
 
 ## Social media
 
