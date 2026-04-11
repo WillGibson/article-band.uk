@@ -6,7 +6,7 @@ featured_image = "images/Article-&-The-Red-Propellers---Studio-18---15th-May---2
 no_header_image = true
 +++
 
-Article & The Red Propellers are playing at Studio 18 on Friday 15th May.
+Article & [The Red Propellers](https://theredpropellers1.bandcamp.com/) are playing at [Studio 18, Stroud](https://www.realartsandmedia.com/studio-18) on Friday 15th May.
 
 <!--more-->
 
@@ -18,4 +18,6 @@ https://article-band.uk
 **The Red Propellers** - A Stroud/Bristol UK psychedelic poetic punk band inspired by the Velvet Underground and late 1970's New York City punk music scene. They are currently promoting their new EP Not Holding The Centre.
 https://theredpropellers1.bandcamp.com/
 
-£5 in advance from [realartsandmedia.com](https://realartsandmedia.com), £7 on the door.
+From 7:30pm.
+
+£5 in advance from [realartsandmedia.com](https://www.realartsandmedia.com/event-details/article-the-red-propellers), £7 on the door.

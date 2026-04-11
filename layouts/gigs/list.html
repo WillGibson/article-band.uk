@@ -5,8 +5,9 @@
       {{- . -}}
     </section>
     {{ end }}
+    {{ $paginator := .Paginate (.Pages.ByDate) }}
     <section class="flex-ns flex-wrap justify-around">
-      {{ range .Paginator.Pages }}
+      {{ range $paginator.Pages }}
         <div class="w-100 mb4 relative bg-white">
           {{ .Render "summary-with-image" }}
         </div>
