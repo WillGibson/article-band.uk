@@ -3,6 +3,10 @@ languageCode = 'en-gb'
 title = 'Article - Band'
 theme = 'ananke'
 publishDir = "public"
+[params]
+  [params.ananke.home]
+    content_alignment = "left"
+
 [caches]
     [caches.images]
         dir = ':cacheDir/images'
