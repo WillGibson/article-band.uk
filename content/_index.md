@@ -3,6 +3,8 @@ title = "Article - Band"
 featured_image = 'images/Article-Header-2026-02-20-a.png'
 description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
 +++
+An alternative rock band reinventing songs you thought you knew and bringing originals you won’t forget.
+
 ## Listen
 
 [Spotify](https://open.spotify.com/artist/4KqyEsSErUyL7ziPVjQjMm)
