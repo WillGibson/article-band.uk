@@ -6,7 +6,7 @@ featured_image = "images/Loab-and-Article-The-Three-Horseshoes.jpeg"
 no_header_image = true
 +++
 
-Article are plying with [Loab](https://loabmusic.com/) at [The Three Horseshoes, Bradford-on-Avon](https://www.theshoesboa.com/) on Saturday 13th June.
+Article are playing with [Loab](https://loabmusic.com/) at [The Three Horseshoes, Bradford-on-Avon](https://www.theshoesboa.com/) on Saturday 13th June.
 
 <!--more-->
 
