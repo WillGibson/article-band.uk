@@ -14,6 +14,11 @@ On all the usual streaming platforms...
 - [YouTube Music](https://www.youtube.com/channel/UC1-75aMHVMtFU-Es7UAFD6g)
 - Etc.
 
+## [Gigs](/gigs/)
+
+- [Studio 18, Stroud - 15th May 2026](/gigs/2026-05-15-studio-18/)
+- [The Three Horseshoes, Bradford-on-Avon - 13th June 2026](/gigs/2026-06-13-the-three-horseshoes/)
+
 ## Social media
 
 - [Facebook](https://www.facebook.com/ArticleBand)

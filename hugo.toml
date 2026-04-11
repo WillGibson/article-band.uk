@@ -3,6 +3,7 @@ languageCode = 'en-gb'
 title = 'Article - Band'
 theme = 'ananke'
 publishDir = "public"
+buildFuture = true
 [params]
   cover_dimming_class = "bg-transparent"
   custom_css = ["css/custom.css"]
@@ -21,7 +22,12 @@ publishDir = "public"
         url = "/"
         weight = 1
     [[menu.main]]
+        identifier = "gigs"
+        name = "Gigs"
+        url = "/gigs/"
+        weight = 2
+    [[menu.main]]
         identifier = "releases"
         name = "Releases"
         url = "/releases/"
-        weight = 2
+        weight = 3
