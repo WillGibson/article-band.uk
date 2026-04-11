@@ -5,6 +5,9 @@ theme = 'ananke'
 publishDir = "public"
 [params]
   cover_dimming_class = "bg-transparent"
+  custom_css = ["css/custom.css"]
+  [params.ananke]
+    show_recent_posts = false
   [params.ananke.home]
     content_alignment = "left"
 
