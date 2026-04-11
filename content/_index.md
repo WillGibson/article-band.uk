@@ -5,7 +5,7 @@ description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
 +++
 An alternative rock band reinventing songs you thought you knew and bringing originals you won't forget.
 
-## Listen
+## [Listen/Releases](/releases/)
 
 On all the usual streaming platforms...
 
