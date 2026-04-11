@@ -14,6 +14,10 @@ On all the usual streaming platforms...
 - [YouTube Music](https://www.youtube.com/channel/UC1-75aMHVMtFU-Es7UAFD6g)
 - Etc.
 
+## [Gigs](/gigs/)
+
+- [Studio 18, Stroud - 15th May 2026](/gigs/2026-05-15-studio-18/)
+
 ## Social media
 
 - [Facebook](https://www.facebook.com/ArticleBand)
