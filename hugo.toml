@@ -3,6 +3,25 @@ languageCode = 'en-gb'
 title = 'Article - Band'
 theme = 'ananke'
 publishDir = "public"
+[params]
+  cover_dimming_class = "bg-transparent"
+  custom_css = ["css/custom.css"]
+  [params.ananke]
+    show_recent_posts = false
+  [params.ananke.home]
+    content_alignment = "left"
+
 [caches]
     [caches.images]
         dir = ':cacheDir/images'
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        identifier = "releases"
+        name = "Releases"
+        url = "/releases/"
+        weight = 2
