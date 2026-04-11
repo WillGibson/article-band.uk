@@ -4,6 +4,7 @@ title = 'Article - Band'
 theme = 'ananke'
 publishDir = "public"
 [params]
+  cover_dimming_class = "bg-transparent"
   [params.ananke.home]
     content_alignment = "left"
 
