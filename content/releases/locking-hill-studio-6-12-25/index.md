@@ -2,6 +2,7 @@
 title = "Locking Hill Studio 6/12/25"
 date = "2026-01-26"
 draft = false
+images = ['releases/locking-hill-studio-6-12-25/images/Article-Locking-Hill-Studio.png']
 +++
 
 ![Locking Hill Studio 6/12/25](images/Article-Locking-Hill-Studio.png)
