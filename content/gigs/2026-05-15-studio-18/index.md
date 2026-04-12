@@ -6,7 +6,7 @@ featured_image = "images/Article-&-The-Red-Propellers---Studio-18---15th-May---2
 no_header_image = true
 +++
 
-Article & [The Red Propellers](https://theredpropellers1.bandcamp.com/) are playing at [Studio 18, Stroud](https://www.realartsandmedia.com/studio-18) on Friday 15th May.
+Article & [The Red Propellers](https://theredpropellers1.bandcamp.com/) are playing at [Studio 18, Stroud](https://www.realartsandmedia.com/event-details/article-the-red-propellers) on Friday 15th May.
 
 <!--more-->
 
