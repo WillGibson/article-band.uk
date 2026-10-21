@@ -4,7 +4,7 @@ description = "Information for people booking Article for gigs"
 no_header_image = true
 +++
 
-![Article Recording Sessions - Autumn 2026](images/article-autumn-2026-sessions-quadritypch.png)
+![Article Recording Sessions - Autumn 2026](images/article-autumn-2026-sessions-quadritypch.jpg)
 
 What began as a chance connection between bassist Will Gibson and guitarist Dan Healy on a workplace Slack channel for musicians has evolved into one of the most exciting heavy alt-rock prospects on the circuit.
 
