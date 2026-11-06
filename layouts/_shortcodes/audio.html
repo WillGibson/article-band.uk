@@ -1,32 +1,39 @@
 {{- /*
-  Simple audio player with a download link.
+  Simple audio player with an optional download link.
 
   Usage:
     {{< audio src="audio/my-track-128kbps.mp3" download="audio/my-track-320kbps.mp3" title="My track" >}}
+    {{< audio src="audio/my-track-128kbps.mp3" download="none" title="My track" >}}
 
   `src` is the file the player streams. `download` is the file the download
-  link offers (defaults to `src`). Each may be a page resource (relative to
-  the page bundle) or a URL.
+  link offers (defaults to `src`); use "none" to hide the link.
+
+  Paths are looked up in the current page's bundle first, then in the site
+  root (content/, e.g. content/audio/), and otherwise used as a URL.
 */ -}}
 {{- $page := .Page -}}
 {{- $src := .Get "src" -}}
 {{- $download := .Get "download" | default $src -}}
 {{- $title := .Get "title" | default (path.BaseName $src) -}}
-{{- $srcURL := $src -}}
-{{- with $page.Resources.Get $src -}}
-  {{- $srcURL = .RelPermalink -}}
+
+{{- $urls := dict -}}
+{{- range $key, $path := dict "src" $src "download" $download -}}
+  {{- $url := $path -}}
+  {{- with or ($page.Resources.Get $path) (site.Home.Resources.Get $path) -}}
+    {{- $url = .RelPermalink -}}
+  {{- end -}}
+  {{- $urls = merge $urls (dict $key $url) -}}
 {{- end -}}
-{{- $downloadURL := $download -}}
-{{- with $page.Resources.Get $download -}}
-  {{- $downloadURL = .RelPermalink -}}
-{{- end -}}
+
 <figure class="audio-player mh0 mv4">
   <figcaption class="b mb2">{{ $title }}</figcaption>
   <audio controls preload="metadata" class="w-100">
-    <source src="{{ $srcURL }}" type="audio/mpeg">
-    Your browser doesn't support embedded audio. Use the download link below.
+    <source src="{{ $urls.src }}" type="audio/mpeg">
+    Your browser doesn't support embedded audio.
   </audio>
+  {{- if ne $download "none" }}
   <p class="f6 tc mt2 mb0">
-    <a href="{{ $downloadURL }}" download>Download {{ $title }} (MP3)</a>
+    <a href="{{ $urls.download }}" download>Download {{ $title }} (MP3)</a>
   </p>
+  {{- end }}
 </figure>

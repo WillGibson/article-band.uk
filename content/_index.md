@@ -4,9 +4,13 @@ featured_image = 'images/Article-Header-2026-02-20-a.png'
 description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
 images = ['images/Article-Header-2026-02-20-a.png']
 +++
-An alternative rock band reinventing songs you thought you knew, and bringing originals you won't forget.
+What began as a chance connection between Dan and Will at work has evolved into a powerhouse four-piece with Charlotte and Ebn Mars.
+
+Article delivers a colossal sound that balances raw power with artistic depth.
 
 ## [Listen/Releases](/releases/)
+
+{{< audio src="audio/Article - Promotional Medley - 2026-11-06 - 128kbps.mp3" download="none" title="Article - Promotional Medley" >}}
 
 On all the usual streaming platforms...
 
