@@ -31,3 +31,8 @@ buildFuture = true
         name = "Releases"
         url = "/releases/"
         weight = 3
+    [[menu.main]]
+        identifier = "epk"
+        name = "EPK"
+        url = "/electronic-press-kit/"
+        weight = 4
