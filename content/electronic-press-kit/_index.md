@@ -1,5 +1,5 @@
 +++
-title = "Press Pack"
+title = "Electronic Press Kit"
 description = "Information for people booking Article for gigs"
 no_header_image = true
 +++
