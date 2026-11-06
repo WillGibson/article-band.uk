@@ -1,5 +1,6 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
+    {{ partials.Include "page-title.html" . }}
     {{ $gigs := .RegularPages.ByDate }}
     {{ if .Param "newest_first" }}
       {{ $gigs = $gigs.Reverse }}

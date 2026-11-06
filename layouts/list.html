@@ -1,0 +1,20 @@
+{{- /* Theme list.html, with a page title added above the content. */ -}}
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    {{- /* Outside the f4 section so its em size matches the gigs page. */}}
+    <header class="list-title cf ph3 ph5-l pt3 pt4-l center">
+      {{- partials.Include "page-title.html" . -}}
+    </header>
+    <section class="cf ph3 ph5-l pb3 pb4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      {{ range .Paginator.Pages }}
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>{{/* former internal template */}}
+    {{ partial "pagination.html" . -}}
+  </article>
+{{ end }}

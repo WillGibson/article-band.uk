@@ -5,3 +5,12 @@ nav[role="navigation"] > div > a {
 .tc-l {
     text-align: left !important;
 }
+
+.page-title {
+    font-size: 1.6em;
+}
+
+/* Same width as the f4 measure-wide content below it (34em at 1.25rem). */
+.list-title {
+    max-width: 42.5rem;
+}
