@@ -10,6 +10,8 @@ What began as a chance connection between bassist Will Gibson and guitarist Dan 
 
 Now a powerhouse four-piece completed by the vocals of Charlotte Louisa and drummer Ebn Mars, Article delivers a colossal sound that balances raw power with artistic depth. 
 
+{{< audio src="audio/Article - Promotional Medley - 2026-11-06 - 128kbps.mp3" download="audio/Article - Promotional Medley - 2026-11-06 - 320kbps.mp3" title="Article - Promotional Medley" >}}
+
 Article's music weaves the legendary riff-heavy swagger of Led Zeppelin and AC/DC with the sharp, confrontational edge of Skunk Anansie and PJ Harvey. Known live for radically reinventing tracks you thought you knew, Article is currently locked in the studio recording a brand-new album of entirely original songs designed to be completely unforgettable.
 
 ## Social media

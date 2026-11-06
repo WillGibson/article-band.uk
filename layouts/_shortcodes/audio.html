@@ -1,0 +1,32 @@
+{{- /*
+  Simple audio player with a download link.
+
+  Usage:
+    {{< audio src="audio/my-track-128kbps.mp3" download="audio/my-track-320kbps.mp3" title="My track" >}}
+
+  `src` is the file the player streams. `download` is the file the download
+  link offers (defaults to `src`). Each may be a page resource (relative to
+  the page bundle) or a URL.
+*/ -}}
+{{- $page := .Page -}}
+{{- $src := .Get "src" -}}
+{{- $download := .Get "download" | default $src -}}
+{{- $title := .Get "title" | default (path.BaseName $src) -}}
+{{- $srcURL := $src -}}
+{{- with $page.Resources.Get $src -}}
+  {{- $srcURL = .RelPermalink -}}
+{{- end -}}
+{{- $downloadURL := $download -}}
+{{- with $page.Resources.Get $download -}}
+  {{- $downloadURL = .RelPermalink -}}
+{{- end -}}
+<figure class="audio-player mh0 mv4">
+  <figcaption class="b mb2">{{ $title }}</figcaption>
+  <audio controls preload="metadata" class="w-100">
+    <source src="{{ $srcURL }}" type="audio/mpeg">
+    Your browser doesn't support embedded audio. Use the download link below.
+  </audio>
+  <p class="f6 tc mt2 mb0">
+    <a href="{{ $downloadURL }}" download>Download {{ $title }} (MP3)</a>
+  </p>
+</figure>
