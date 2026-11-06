@@ -25,7 +25,7 @@
   {{- $urls = merge $urls (dict $key $url) -}}
 {{- end -}}
 
-<figure class="audio-player mh0 mv4">
+<figure class="audio-player mh0 mv4" data-track="{{ $title }}">
   <figcaption class="b mb2">{{ $title }}</figcaption>
   <audio controls preload="metadata" class="w-100">
     <source src="{{ $urls.src }}" type="audio/mpeg">

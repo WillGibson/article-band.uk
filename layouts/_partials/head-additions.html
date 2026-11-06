@@ -1,0 +1,38 @@
+{{- /*
+  GoatCounter analytics (https://article-band.goatcounter.com).
+  No cookies. Only included in production builds, so `hugo server`
+  doesn't count local visits.
+
+  Also records events for the audio shortcode:
+    "Play: <track> (<page>)"      - first press of play per page view
+    "Download: <track> (<page>)"  - click on the download link
+*/ -}}
+{{- if hugo.IsProduction }}
+<script data-goatcounter="https://article-band.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+  (function () {
+    function track(kind, el) {
+      var player = el.closest('[data-track]');
+      if (!player || !window.goatcounter || !window.goatcounter.count) return;
+      window.goatcounter.count({
+        path: kind + ': ' + player.dataset.track + ' (' + location.pathname + ')',
+        title: player.dataset.track,
+        event: true
+      });
+    }
+
+    // "play" doesn't bubble, so listen in the capture phase.
+    document.addEventListener('play', function (e) {
+      var audio = e.target;
+      if (audio.tagName !== 'AUDIO' || audio.dataset.counted) return;
+      audio.dataset.counted = 'true';
+      track('Play', audio);
+    }, true);
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest && e.target.closest('a[download]');
+      if (link) track('Download', link);
+    });
+  })();
+</script>
+{{- end }}
