@@ -8,15 +8,15 @@ What began as a chance connection between Dan and Will at work has evolved into 
 
 Article delivers a colossal sound that balances raw power with artistic depth.
 
-## [Listen/Releases](/releases/)
-
 {{< audio src="audio/Article - Promotional Medley - 2026-11-06 - 128kbps.mp3" download="none" title="Article - Promotional Medley" >}}
 
-On all the usual streaming platforms...
+We are on all the usual streaming platforms...
 
 - [Spotify](https://open.spotify.com/artist/4KqyEsSErUyL7ziPVjQjMm)
 - [YouTube Music](https://www.youtube.com/channel/UC1-75aMHVMtFU-Es7UAFD6g)
 - Etc.
+
+## [Releases](/releases/)
 
 ## [Gigs](/gigs/)
 
