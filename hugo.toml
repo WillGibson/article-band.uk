@@ -36,3 +36,6 @@ buildFuture = true
         name = "EPK"
         url = "/electronic-press-kit/"
         weight = 4
+
+[markup.goldmark.parser.attribute]
+  block = true
