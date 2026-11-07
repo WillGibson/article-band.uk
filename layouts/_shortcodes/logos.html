@@ -1,0 +1,40 @@
+{{- /*
+  "Logos" section showing a small preview, on a light grey tile, with a label above it, of every
+  image in the page's images/logos/ folder. Clicking a preview downloads the
+  full-size file.
+
+  Usage:
+    {{< logos >}}Instructions, in Markdown.{{< /logos >}}
+
+  The alt text and the label above each logo come from the file name, e.g.
+  "Article-Logo-Black-On-White.png" gives "Article Logo Black On White" and
+  the label "Black on white".
+
+  Order: White-On-... logos before Black-On-..., and within each colour the
+  solid background before the transparent one.
+*/ -}}
+<section class="logos mv4">
+  <h2 id="logos" class="mt0">Logos</h2>
+  {{ with .Inner }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+  <div class="logo-grid">
+    {{- $logos := slice }}
+    {{- range .Page.Resources.Match "images/logos/*" }}
+      {{- $colour := index (split (path.BaseName .Name) "-On-") 0 }}
+      {{- $solid := cond (strings.Contains .Name "Transparent") "0" "1" }}
+      {{- $logos = $logos | append (dict "key" (printf "%s|%s" $colour $solid) "res" .) }}
+    {{- end }}
+    {{- range $l := sort $logos "key" "desc" }}
+      {{- with $l.res }}
+      {{- $name := replace (path.BaseName .Name) "-" " " }}
+      {{- $label := strings.TrimPrefix "article logo " (lower $name) | strings.FirstUpper }}
+      {{- $preview := .Resize "384x" }}
+      <div class="logo">
+        <p class="f6 mv1">{{ $label }}</p>
+        <a href="{{ .RelPermalink }}" class="db bg-moon-gray pa2" download title="Download {{ $name }} ({{ .Width }}×{{ .Height }})">
+          <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" alt="{{ $name }}">
+        </a>
+      </div>
+      {{- end }}
+    {{- end }}
+  </div>
+</section>

@@ -19,3 +19,7 @@ Article's music weaves the legendary riff-heavy swagger of Led Zeppelin and AC/D
 - [Facebook](https://www.facebook.com/ArticleBand)
 - [Instagram](https://www.instagram.com/article.a.band/)
 - [Blue Sky Social](https://bsky.app/profile/article-band.bsky.social)
+
+{{< logos >}}
+Click a logo to download the full-size file.
+{{< /logos >}}

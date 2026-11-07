@@ -22,3 +22,25 @@ nav[role="navigation"] > div > a > img {
     width: auto;
     max-width: 100%;
 }
+
+/* Logos section on the Electronic Press Kit page. */
+/* Two logos per row, filling the width of the text above; one per row on phones. */
+.logos .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    align-items: end;
+}
+
+/* Same phone breakpoint as the theme's "-ns" (not small) classes. */
+@media screen and (max-width: 30em) {
+    .logos .logo-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.logos img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
