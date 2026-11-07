@@ -1,5 +1,48 @@
 {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
-{{ if $featured_image }}
+{{ if .IsHome }}
+  {{/* Home page: the same simple header as other pages, with the featured image full width underneath. */}}
+  <header>
+    <div class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
+      {{ partials.Include "site-navigation.html" . }}
+    </div>
+    {{/*
+      Crop the top and bottom with CSS, less as the window gets narrower:
+      the fraction of the image height shown is 1.0 up to 400px wide,
+      0.8 at 700px and 0.6 from 1000px, changing smoothly in between.
+      The heights are worked out from the image's own proportions.
+    */}}
+    {{ with .Resources.GetMatch .Params.featured_image }}
+      {{ $r := div (float .Height) .Width }}
+      {{ $points := slice (slice 400 1.0) (slice 700 0.8) (slice 1000 0.6) }}
+      <style>
+        .home-header-image {
+          display: block;
+          width: 100%;
+          height: {{ math.Mul $r 100 }}vw;
+          object-fit: cover;
+          object-position: center;
+        }
+        {{- range $i, $p := first 2 $points }}
+          {{- $q := index $points (add $i 1) }}
+          {{- $w1 := index $p 0 }}{{ $h1 := math.Mul $r $w1 (index $p 1) }}
+          {{- $w2 := index $q 0 }}{{ $h2 := math.Mul $r $w2 (index $q 1) }}
+          {{- $slope := div (sub $h2 $h1) (float (sub $w2 $w1)) }}
+        @media (min-width: {{ $w1 }}px) {
+          .home-header-image { height: calc({{ math.Mul $slope 100 }}vw + {{ sub $h1 (math.Mul $slope $w1) }}px); }
+        }
+        {{- end }}
+        @media (min-width: 1000px) {
+          .home-header-image { height: {{ math.Mul $r 100 0.6 }}vw; }
+        }
+      </style>
+      <img src="{{ .RelPermalink }}" class="home-header-image" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Site.Title }}">
+    {{ else }}
+      {{ with $featured_image }}
+        <img src="{{ . }}" class="db w-100" alt="{{ $.Site.Title }}">
+      {{ end }}
+    {{ end }}
+  </header>
+{{ else if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-top" }}
   <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">

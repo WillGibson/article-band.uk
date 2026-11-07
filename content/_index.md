@@ -1,8 +1,8 @@
 +++
 title = "Article - Band"
-featured_image = 'images/Article-Header-2026-02-20-a.png'
+featured_image = 'images/Article-Header-2026-11-07-a.jpg'
 description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
-images = ['images/Article-Header-2026-02-20-a.png']
+images = ['images/Article-Header-2026-11-07-a.jpg']
 +++
 What began as a chance connection between Dan and Will at work has evolved into a powerhouse four-piece with Charlotte and Ebn Mars.
 
