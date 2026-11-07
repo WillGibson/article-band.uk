@@ -14,3 +14,11 @@ nav[role="navigation"] > div > a {
 .list-title {
     max-width: 42.5rem;
 }
+
+/* Logo in the site navigation, in place of the site title text. */
+nav[role="navigation"] > div > a > img {
+    display: block;
+    height: 3rem;
+    width: auto;
+    max-width: 100%;
+}

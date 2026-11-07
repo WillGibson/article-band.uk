@@ -5,6 +5,7 @@ theme = 'ananke'
 publishDir = "public"
 buildFuture = true
 [params]
+  site_logo = "/images/article-logo.png"
   cover_dimming_class = "bg-transparent"
   custom_css = ["css/custom.css"]
   [params.ananke]
