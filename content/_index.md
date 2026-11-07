@@ -16,9 +16,11 @@ We are on all the usual streaming platforms...
 - [YouTube Music](https://www.youtube.com/channel/UC1-75aMHVMtFU-Es7UAFD6g)
 - Etc.
 
-## [Releases](/releases/)
-
 ## [Gigs](/gigs/)
+
+{{< next-gig >}}
+
+## [Releases](/releases/)
 
 ## Social media
 
