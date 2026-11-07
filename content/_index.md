@@ -4,7 +4,7 @@ featured_image = 'images/Article-Header-2026-11-07-a.jpg'
 description = "Article, a band from Stroud/Cirencester, Gloucestershire, UK"
 images = ['images/Article-Header-2026-11-07-a.jpg']
 +++
-What began as a chance connection between Dan and Will at work has evolved into a powerhouse four-piece with Charlotte and Ebn Mars.
+What began as a chance connection between Dan Healy and Will Gibson at work has evolved into a powerhouse four-piece with Charlotte Louisa and Ebn Mars.
 
 Article delivers a colossal sound that balances raw power with artistic depth.
 
